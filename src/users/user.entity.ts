@@ -14,6 +14,9 @@ import {
 
   @PrimaryGeneratedColumn()
   id: number;
+  
+  @Column()
+  username: string;
 
   @Column()
   firstName: string;

@@ -19,6 +19,10 @@ export class UsersService {
     return this.usersRepository.findOneBy({ id });
   }
 
+  findOneBy(username: string): Promise<User | undefined> {
+    return this.usersRepository.findOneBy({ username });
+  }
+
   async createUser(createUserDto: CreateUserDto): Promise<User> {
     if (createUserDto.password != createUserDto.passwordConfirmation) {
       throw new UnprocessableEntityException('As senhas não conferem');
