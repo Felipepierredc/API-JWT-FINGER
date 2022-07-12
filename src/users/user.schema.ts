@@ -30,6 +30,27 @@ export const UserSchema = new EntitySchema<User>({
             type: Boolean,
             default: true,
         },
+        adress: {
+            type: String,
+        },
+        state: {
+            type: String,
+        },
+        zipcode: {
+            type: Number,
+        },
+        city: {
+            type: String,
+        },
+        village: {
+            type: String,
+        },
+        street: {
+            type: String,
+        },
+        number: {
+            type: Number,
+        },
     },
 
 });

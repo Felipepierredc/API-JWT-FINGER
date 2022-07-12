@@ -33,4 +33,25 @@ import {
   @Column({ default: true })
   isActive: boolean;
 
+  @Column()
+  adress: string;
+
+  @Column()
+  zipcode: number;
+
+  @Column()
+  state: string;
+
+  @Column()
+  city: string;
+
+  @Column()
+  village: string;
+
+  @Column()
+  street: string;
+
+  @Column()
+  number: number;
+
   }
